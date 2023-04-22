@@ -9,7 +9,7 @@ body {
     height: 100%;
 }
 body {
-    background: rgb(50, 53, 55);
+    background: rgb(68, 162, 225);
 }
 
 :root {
@@ -22,6 +22,10 @@ body {
     src: url("./assets/stone\ orgonite.woff");
 }
 
+.links {
+    text-align: center;
+}
+
 
 .logo {
     display: flex();
@@ -31,24 +35,34 @@ body {
 .logo h1 {
     margin-left: 0.5 rem;
     font-family: "argonite", sans-serif;
+    text-align: center;
 }
 
 h2 {
     font-size: 2.5rem;
     line-height: 125%;
     padding: 1rem, 0rem;
+    text-align: center;
 }
 
 .selling-point {
     margin-top: 25vh;
 }
 
+.prompt-user-input {
+    text-align: center;
+}
+
 .cta-main {
     background-color: var(--main-color);
     color: var(--secondary-color);
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .cta-sec {
     background-color: var(--seondary-color);
     color: white;
+    text-align: center;
 }
