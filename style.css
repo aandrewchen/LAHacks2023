@@ -9,7 +9,8 @@ body {
     height: 100%;
 }
 body {
-    background: rgb(68, 162, 225);
+    background: #f0f0f0;
+    color: #333;
 }
 
 :root {
@@ -26,6 +27,11 @@ body {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {
     display: flex();
@@ -40,8 +46,14 @@ body {
 
 h2 {
     font-size: 2.5rem;
+    font-weight: bold;
     line-height: 125%;
     padding: 1rem, 0rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: sans-serif;
     text-align: center;
 }
 
@@ -51,6 +63,13 @@ h2 {
 
 .prompt-user-input {
     text-align: center;
+}
+
+.ctas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 .cta-main {
