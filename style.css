@@ -9,7 +9,7 @@ body {
     height: 100%;
 }
 body {
-    background: rgb(128, 187, 255);
+    background: rgb(50, 53, 55);
 }
 
 :root {
@@ -39,3 +39,16 @@ h2 {
     padding: 1rem, 0rem;
 }
 
+.selling-point {
+    margin-top: 25vh;
+}
+
+.cta-main {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.cta-sec {
+    background-color: var(--seondary-color);
+    color: white;
+}
