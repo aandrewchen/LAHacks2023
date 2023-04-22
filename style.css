@@ -9,12 +9,12 @@ body {
     height: 100%;
 }
 body {
-    background: rgb(66, 66, 66);
+    background: rgb(128, 187, 255);
 }
 
 :root {
     --main-color: #f8b281;
-    --seocndary-color: #1b1b1b;
+    --secondary-color: #1b1b1b;
 }
 
 @font-face {
@@ -22,7 +22,20 @@ body {
     src: url("./assets/stone\ orgonite.woff");
 }
 
+
 .logo {
     display: flex();
     align-items: center;
 }
+
+.logo h1 {
+    margin-left: 0.5 rem;
+    font-family: "argonite", sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1rem, 0rem;
+}
+
