@@ -24,5 +24,10 @@ body {
 
 .links {
     display: none;
-    
+
+}
+
+.logo {
+    display: flex();
+    align-items: center;
 }
