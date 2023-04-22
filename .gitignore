@@ -1,0 +1,25 @@
+# Compiled output
+node_modules/
+dist/
+build/
+*.log
+
+# Environment variables
+.env
+
+# IDE/Editor specific files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NPM and Yarn cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
