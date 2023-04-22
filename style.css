@@ -22,11 +22,6 @@ body {
     src: url("./assets/stone\ orgonite.woff");
 }
 
-.links {
-    display: none;
-
-}
-
 .logo {
     display: flex();
     align-items: center;
