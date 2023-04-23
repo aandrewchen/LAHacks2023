@@ -154,6 +154,43 @@
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
             const analytics = getAnalytics(app);
+
+            import {getDatabase, set, get, update, remove, ref, child}
+            from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js";
+            
+            const db = getDatabase();
+            var enterSubject = document.querySelector("#enterSubject");
+            
+            var insertBtn = document.querySelector("#insert");
+            var updateBtn = document.querySelector("#update");
+            var findBtn = document.querySelector("#remove");
+
+            var collectionName = "test1"
+            var dataToAdd = {
+                Subject: "CS32"
+            };
+            db.collection(collectionName).add(dataToAdd);
+
+            function InsertData() {
+                set(ref(db, "People/"), {
+                    Subject: enterSubject.value
+            })
+            .then(()=> {
+                alert("Data added successfully!")
+            })
+
+            function FindData() {
+
+            }
+
+            function UpdateData() {
+
+            }
+
+            insertBtn.addEventListener("click", InsertData);
+            findBtn.addEventListener("click", FindData);
+            updateBtn.addEventListener("click", UpdateData);
+            
           </script>
     </body>
 
