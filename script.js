@@ -1,4 +1,4 @@
-var swiper = new Swiper(".swiper-content", {
+/* var swiper = new Swiper(".swiper-content", {
     slidesPerView: 3,
     spaceBetween: 25,
     loop: true,
@@ -27,9 +27,9 @@ var swiper = new Swiper(".swiper-content", {
         },
     },
 
-});
+}); */
 
-/* var swiper = new Swiper(".swiper-content", {
+var swiper = new Swiper(".swiper-content", {
     slidesPerView: 1,
     centeredSlides: false,
     slidesPerGroupSkip: 1,
@@ -54,4 +54,4 @@ var swiper = new Swiper(".swiper-content", {
       el: ".swiper-pagination",
       clickable: true,
     },
-  }); */
+  });
