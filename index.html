@@ -227,68 +227,6 @@
             <h2>Your Friends Are Studying Near You!</h2>
         </section>
 
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-analytics.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-          
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-              apiKey: "AIzaSyAa0GPS1QGCiZGgPHgexCU7hfTh5yH73VY",
-              authDomain: "blearn-e454f.firebaseapp.com",
-              databaseURL: "https://blearn-e454f-default-rtdb.firebaseio.com",
-              projectId: "blearn-e454f",
-              storageBucket: "blearn-e454f.appspot.com",
-              messagingSenderId: "464275538435",
-              appId: "1:464275538435:web:9d539fbd2f7608c8730436",
-              measurementId: "G-7JBNFKNE2B"
-            };
-          
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
-
-            import {getDatabase, set, get, update, remove, ref, child}
-            from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js";
-            
-            const db = getDatabase();
-            var enterSubject = document.querySelector("#enterSubject");
-            
-            var insertBtn = document.querySelector("#insert");
-            var updateBtn = document.querySelector("#update");
-            var findBtn = document.querySelector("#remove");
-
-            var collectionName = "test1"
-            var dataToAdd = {
-                Subject: "CS32"
-            };
-            db.collection(collectionName).add(dataToAdd);
-
-            function InsertData() {
-                set(ref(db, "People/"), {
-                    Subject: enterSubject.value
-            })
-            .then(()=> {
-                alert("Data added successfully!")
-            })
-            }
-
-            function FindData() {
-
-            }
-
-            function UpdateData() {
-
-            }
-
-            insertBtn.addEventListener("click", InsertData);
-            findBtn.addEventListener("click", FindData);
-            updateBtn.addEventListener("click", UpdateData);
-            
-          </script>
     </body>
 
     <script src="swiper-bundle.min.js"></script>
