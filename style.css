@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
-    margin: 3px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -20,8 +20,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10;
-    font-size: 16px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,12 +28,14 @@ header {
 }
 
 .slogan {
+    font-size: 2em;
     color: #fff;
     user-select: none;
 }
 
 .navigation a {
     position: relative;
+    font-size: 1.1em;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -61,8 +62,8 @@ header {
 }
 
 .navigation .btnStart-popup {
-    width: 125px;
-    height: 45px;
+    width: 130px;
+    height: 50px;
     background: transparent;
     border: 2px solid #fff;
     outline: none;
@@ -78,6 +79,105 @@ header {
 .navigation .btnStart-popup:hover {
     background: #fff;
     color: #162938;
+}
+
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+    padding: 40px 0;
+}
+
+.slide-content {
+    margin: 0 40px;
+}
+
+.card {
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: gold;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+   font-size: 18px;
+   font-weight: 500;
+}
+
+.description {
+    font-size: 14px;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: blue;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #265df2;
 }
 
 /* h2 {

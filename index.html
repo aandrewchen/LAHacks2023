@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Education Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -22,25 +26,39 @@
         </nav>
     </header>
 
-    <div class="website-description">
-        <h2>Two minds are better than one.</h2>
-        <h3>Connect with peers, collaborate, and create together</h3>
-        <div class="ctas">
-            <button class="cta-sec">start collaborating</button>
-            <button class="cta-main">profile</button>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/pic1.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">UCLA Bruins</h2>
+                        <h3 class="subject">Studying: Computer Science</h3>
+                        <h3 class="confidence">Level of Confidence: 6.5</h3>
+                        <h3 class="location">Location: Powell Library</h3>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
     </div>
 
-    <div>
-        <div class="prompt-user-input">
-            <h2>What are you working on?</h2>
-            <h3>Location:</h3>
-            <h3>How confident are you?</h3>
-            <h3>Subject:</h3>
-        </div>
-    </div>
 
-    <script src="index.js"></script>
+
+
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
@@ -63,4 +81,26 @@
       </script>
 </body>
 
+<script src="swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+
 </html>
+
+<!-- <div class="website-description">
+        <h2>Two minds are better than one.</h2>
+        <h3>Connect with peers, collaborate, and create together</h3>
+        <div class="ctas">
+            <button class="cta-sec">start collaborating</button>
+            <button class="cta-main">profile</button>
+        </div>
+    </div>
+
+    <div>
+        <div class="prompt-user-input">
+            <h2>What are you working on?</h2>
+            <h3>Location:</h3>
+            <h3>How confident are you?</h3>
+            <h3>Subject:</h3>
+        </div>
+    </div> -->
