@@ -100,6 +100,7 @@ header {
 }
 
 .slide-container {
+    position: fixed;
     max-width: 1120px;
     width: 100%;
     padding: 40px 0;
@@ -239,40 +240,12 @@ header {
     }
 }
 
-/* h2 {
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 125%;
-    padding: 1rem, 0rem;
-    text-align: center;
+section {
+    position: fixed;
+    display: block, grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    padding-top: 100px;
+    margin-bottom: 50px;
 }
-
-h3 {
-    font-family: sans-serif;
-    text-align: center;
-}
-
-.prompt-user-input {
-    text-align: center;
-}
-
-.ctas {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-.cta-main {
-    background-color: var(--main-color);
-    color: var(--secondary-color);
-    padding: 0.5rem;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.cta-sec {
-    background-color: var(--seondary-color);
-    color: white;
-    text-align: center;
-} */
