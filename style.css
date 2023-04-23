@@ -27,6 +27,24 @@ header {
     z-index: 99;
 }
 
+.container {
+    position: fixed;
+    width: 100%;
+    bottom: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 600px;
+}
+
 .slogan {
     font-size: 2em;
     color: #fff;
