@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: blue;
+    background-color: #9DCAEB;
 }
 
 header {
@@ -118,7 +118,7 @@ header {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: gold;
+    background-color: #ffee93;
     border-radius: 25px 25px 0 25px;
 }
 
@@ -130,7 +130,7 @@ header {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: gold;
+    background-color: #ffee93;
 }
 
 .overlay::after {
